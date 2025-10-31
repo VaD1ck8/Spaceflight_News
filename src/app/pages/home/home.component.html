@@ -1,0 +1,14 @@
+<div class="home">
+<div class="srch-in-hm">
+    <app-search-input (searchClick)="onSearch($event)"></app-search-input>
+</div>
+    <div class="results" > <span>Results:</span></div>
+    <div class="line"></div>
+<div class="cards">
+    <app-article-card
+      *ngFor="let article of filteredArticles"
+      [article]="article"
+      [searchText]="searchText">
+    </app-article-card>
+</div>
+</div>

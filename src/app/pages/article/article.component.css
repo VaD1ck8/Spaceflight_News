@@ -1,0 +1,71 @@
+.mat-button-rm{
+font-family: Montserrat;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #363636;
+border: none;
+background-color: transparent;
+}
+.readmore-img{
+    transform: scaleX(-1);
+
+}
+.mat-card-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    
+}
+h1{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.top{
+    align-items: center;
+    position: absolute;
+    width: 98%;
+    height: 45%;
+    z-index: 0;
+    overflow: hidden;
+    margin: 0 0 0 0;
+}
+.content{
+    height: 60%;
+    margin-top: 15%;
+    position: absolute;
+    z-index: 1;
+    width: 85%;
+    margin-left: 7.5%;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA
+}
+
+.mat-button{
+    margin-left: 5%;
+    opacity: 1;
+    position: absolute;
+    z-index: 1; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+
+}
+.summary{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+}

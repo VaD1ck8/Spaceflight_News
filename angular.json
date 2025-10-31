@@ -5,7 +5,11 @@
   "projects": {
     "Spaceflight_News": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "skipTests": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -92,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "94aa51e9-66d6-475d-a5e2-027fbe178439"
   }
 }

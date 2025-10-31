@@ -1,0 +1,38 @@
+<div class="srch-in">
+  <span class="srch-in-text">Filter by keywords</span>
+
+<div
+  class="search-bar-container"
+  [class.active]="isActive"
+  (click)="activate()"
+  (keydown.enter)="activate()"
+  tabindex="0"
+  role="button"
+>
+    <img src="assets\imgs\Vector.svg" class="search-img" id="searchIcon">
+  <input
+    #searchInput
+    type="text"
+    placeholder="SearchInput"
+    [(ngModel)]="searchText"
+    (ngModelChange)="onSearch()"
+    (click)="onInputClick($event)"
+    class="search-bar"
+    id="searchInput"
+    onfocus="this.placeholder = 'Enter your request';"
+    onblur="this.placeholder = 'SearchInput';"
+  />
+
+  <button
+    class="clear-button"
+    [class.visible]="searchText"
+    (click)="clearSearch()"
+    aria-label="Clear search"
+  >
+   <img src="\assets\imgs\17538788.png" alt="clear-button" class="close" width="20"
+   height="20"
+   viewBox="0 0 20 20"
+    fill="currentColor">
+  </button>
+</div>
+</div>

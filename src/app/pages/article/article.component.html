@@ -1,0 +1,15 @@
+<div *ngIf="article">
+  <div class="top">
+    <img mat-card-image class="mat-card-image" [src]="article.image_url" [alt]="article.title">
+  </div>
+  <div class="content">
+  <h1>{{ article.title }}</h1>
+  <div class="summary">
+  <span>{{ article.summary }}</span>
+  </div>
+  </div>
+  <mat-card-actions (click)="onReadMore()" class="mat-button">
+    <img src="assets\imgs\Arrow - Right.png" class="readmore-img">
+    <button class="mat-button-rm" mat-button>Back to homepage</button>
+  </mat-card-actions>
+</div>
