@@ -11,6 +11,9 @@
 npm-debug.log
 yarn-error.log
 
+# Angular CLI gh-pages cache
+/node_modules/.cache/gh-pages
+
 # IDEs and editors
 .idea/
 .project
